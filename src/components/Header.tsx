@@ -61,7 +61,7 @@ export const Header = () => {
 
           {/* CTA Button Desktop */}
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5547989142369"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex btn-primary"
@@ -99,7 +99,7 @@ export const Header = () => {
             ))}
             <li>
               <a
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/5547989142369"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-block text-center w-full"
