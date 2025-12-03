@@ -9,10 +9,10 @@ const contactInfo = [
     color: "bg-primary",
   },
   {
-    icon: Phone,
-    title: "Telefone",
-    content: "(47) 98914-2369",
-    link: "tel:+5547989142369",
+    icon: Clock,
+    title: "Horário",
+    content: "Segunda a sexta: 8h às 18h",
+    link: null,
     color: "bg-secondary",
   },
   {
@@ -23,11 +23,11 @@ const contactInfo = [
     color: "bg-accent",
   },
   {
-    icon: Clock,
-    title: "Horário",
-    content: "Segunda a sexta: 8h às 18h",
-    link: null,
-    color: "bg-primary",
+    icon: MessageCircle,
+    title: "WhatsApp",
+    content: "Fale conosco agora",
+    link: "https://wa.me/5500000000000",
+    color: "bg-[#25D366]",
   },
 ];
 
@@ -96,14 +96,11 @@ export const Contact = () => {
             <h3 className="text-2xl md:text-3xl font-heading font-bold text-background mb-3">
               Fale pelo WhatsApp
             </h3>
-            <p className="text-background/80 mb-2 text-lg font-semibold">
-              (47) 98914-2369
-            </p>
-            <p className="text-background/70 mb-6 max-w-sm mx-auto text-sm">
+            <p className="text-background/80 mb-6 max-w-sm mx-auto">
               Atendimento rápido e direto. Tire suas dúvidas e agende uma consulta gratuita.
             </p>
             <a
-              href="https://wa.me/5547989142369"
+              href="https://wa.me/5500000000000"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-background text-[#25D366] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-background/90 transition-colors"
@@ -121,10 +118,7 @@ export const Contact = () => {
             <h3 className="text-2xl md:text-3xl font-heading font-bold text-background mb-3">
               Envie um e-mail
             </h3>
-            <p className="text-background/80 mb-2 text-sm">
-              adrianasimoesmara@gmail.com
-            </p>
-            <p className="text-background/70 mb-6 max-w-sm mx-auto text-sm">
+            <p className="text-background/80 mb-6 max-w-sm mx-auto">
               Prefere o e-mail? Envie sua mensagem e responderemos o mais breve possível.
             </p>
             <a

@@ -55,7 +55,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
+              <a
                   href="#principios"
                   className="text-background/70 hover:text-background transition-colors"
                 >
@@ -86,16 +86,7 @@ export const Footer = () => {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <a
-                  href="tel:+5547989142369"
-                  className="text-background/70 hover:text-background transition-colors text-sm"
-                >
-                  (47) 98914-2369
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
+                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="mailto:adrianasimoesmara@gmail.com"
                   className="text-background/70 hover:text-background transition-colors text-sm"
