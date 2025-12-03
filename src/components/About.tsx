@@ -1,4 +1,5 @@
-import { CheckCircle, Building2, Target } from "lucide-react";
+import { CheckCircle, Building2 } from "lucide-react";
+import teamAbout from "@/assets/team-about.jpg";
 
 export const About = () => {
   const highlights = [
@@ -49,23 +50,22 @@ export const About = () => {
             </ul>
           </div>
 
-          {/* Visual Element */}
+          {/* Image */}
           <div className="relative animate-fade-up animation-delay-200">
-            <div className="relative bg-primary rounded-2xl p-8 md:p-12">
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/30 rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary-dark/30 rounded-full blur-2xl" />
-              
-              <div className="relative z-10 text-background">
-                <Target className="w-16 h-16 mb-6" />
-                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-                  Desde 2003 transformando negócios
-                </h3>
-                <p className="text-background/80 leading-relaxed">
-                  Mais de duas décadas dedicadas a ajudar empresas a alcançarem 
-                  seus objetivos através de uma gestão contábil eficiente e 
-                  consultoria especializada.
-                </p>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={teamAbout}
+                alt="Equipe AACC em reunião de trabalho discutindo relatórios financeiros"
+                className="w-full h-auto object-cover"
+              />
+              {/* Decorative overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+            </div>
+            
+            {/* Floating card */}
+            <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-xl hidden md:block">
+              <div className="text-4xl font-bold mb-1">20+</div>
+              <div className="text-primary-foreground/80 text-sm">Anos de experiência</div>
             </div>
           </div>
         </div>

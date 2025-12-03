@@ -30,19 +30,19 @@ const values = [
 
 export const Values = () => {
   return (
-    <section id="valores" className="section-padding section-alt">
+    <section id="principios" className="section-padding section-alt">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-up">
           <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
             <Heart className="w-4 h-4 text-primary" />
-            <span className="text-primary text-sm font-semibold">Nossos valores</span>
+            <span className="text-primary text-sm font-semibold">Nossos princípios</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
             Princípios que nos <span className="text-gradient">guiam</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Nossa atuação é pautada por valores sólidos que garantem a confiança 
+            Nossa atuação é pautada por princípios sólidos que garantem a confiança 
             e a satisfação dos nossos clientes.
           </p>
         </div>
