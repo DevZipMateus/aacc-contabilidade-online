@@ -55,11 +55,11 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#valores"
+              <a
+                  href="#principios"
                   className="text-background/70 hover:text-background transition-colors"
                 >
-                  Valores
+                  Princípios
                 </a>
               </li>
               <li>
