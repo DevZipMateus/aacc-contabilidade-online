@@ -1,7 +1,7 @@
 export const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/5500000000000"
+      href="https://wa.me/5547989142369"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Entrar em contato pelo WhatsApp"
