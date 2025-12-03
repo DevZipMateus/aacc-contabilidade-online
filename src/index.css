@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* AACC Brand Colors - 60/30/10 Rule */
+    /* AACC Brand Colors - Enhanced Palette */
     /* 60% - White/Light backgrounds */
     --background: 0 0% 100%;
     --foreground: 220 25% 10%;
@@ -17,18 +17,21 @@
     --primary-light: 205 70% 95%;
     --primary-dark: 205 75% 35%;
 
-    /* 10% - Accent/Secondary */
-    --accent: 205 80% 55%;
-    --accent-foreground: 0 0% 100%;
+    /* 10% - Accent Colors */
+    --accent: 35 90% 55%;
+    --accent-foreground: 220 25% 10%;
+    --accent-light: 35 90% 95%;
+
+    /* Secondary - Teal variation */
+    --secondary: 180 50% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 180 50% 95%;
 
     --card: 0 0% 100%;
     --card-foreground: 220 25% 10%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 10%;
-
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 220 25% 20%;
 
     --muted: 210 15% 96%;
     --muted-foreground: 215 15% 45%;
@@ -43,11 +46,12 @@
     --radius: 0.625rem;
 
     /* Custom Design Tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(205 70% 45%) 0%, hsl(205 80% 35%) 100%);
+    --hero-overlay: linear-gradient(135deg, hsl(205 75% 35% / 0.85) 0%, hsl(220 30% 15% / 0.9) 100%);
     --section-gradient: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(0 0% 100%) 100%);
     --card-shadow: 0 4px 20px -4px hsl(205 70% 45% / 0.15);
     --card-shadow-hover: 0 12px 40px -8px hsl(205 70% 45% / 0.25);
-    --text-gradient: linear-gradient(135deg, hsl(205 70% 45%) 0%, hsl(205 80% 55%) 100%);
+    --text-gradient: linear-gradient(135deg, hsl(205 70% 45%) 0%, hsl(180 50% 45%) 100%);
+    --accent-gradient: linear-gradient(135deg, hsl(35 90% 55%) 0%, hsl(25 85% 50%) 100%);
 
     /* Sidebar defaults */
     --sidebar-background: 0 0% 98%;
@@ -65,16 +69,16 @@
     --foreground: 210 20% 98%;
     --primary: 205 70% 50%;
     --primary-foreground: 0 0% 100%;
+    --accent: 35 90% 55%;
+    --accent-foreground: 220 25% 10%;
+    --secondary: 180 50% 45%;
+    --secondary-foreground: 0 0% 100%;
     --card: 220 25% 10%;
     --card-foreground: 210 20% 98%;
     --popover: 220 25% 10%;
     --popover-foreground: 210 20% 98%;
-    --secondary: 217 25% 15%;
-    --secondary-foreground: 210 20% 98%;
     --muted: 217 25% 15%;
     --muted-foreground: 215 15% 65%;
-    --accent: 205 70% 50%;
-    --accent-foreground: 0 0% 100%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 210 20% 98%;
     --border: 217 25% 18%;
@@ -128,8 +132,15 @@
     background-clip: text;
   }
 
-  .hero-gradient {
-    background: var(--hero-gradient);
+  .text-accent-gradient {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-overlay {
+    background: var(--hero-overlay);
   }
 
   .section-alt {
@@ -152,6 +163,18 @@
     @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
   }
 
+  .btn-accent {
+    @apply bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold;
+    @apply hover:bg-accent/90 transition-all duration-300;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold;
+    @apply hover:bg-secondary/90 transition-all duration-300;
+    @apply focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+
   .btn-outline {
     @apply bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-lg font-semibold;
     @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
@@ -159,15 +182,15 @@
   }
 
   .btn-hero {
-    @apply bg-background text-primary px-8 py-4 rounded-lg font-semibold text-lg;
-    @apply hover:bg-background/90 transition-all duration-300 shadow-lg;
-    @apply focus:outline-none focus:ring-2 focus:ring-background focus:ring-offset-2 focus:ring-offset-primary;
+    @apply bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg;
+    @apply hover:bg-accent/90 transition-all duration-300 shadow-lg;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
   }
 
   .btn-hero-outline {
     @apply bg-transparent text-background border-2 border-background/80 px-8 py-4 rounded-lg font-semibold text-lg;
     @apply hover:bg-background/10 transition-all duration-300;
-    @apply focus:outline-none focus:ring-2 focus:ring-background focus:ring-offset-2 focus:ring-offset-primary;
+    @apply focus:outline-none focus:ring-2 focus:ring-background focus:ring-offset-2;
   }
 }
 
