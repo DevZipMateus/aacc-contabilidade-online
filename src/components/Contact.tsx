@@ -26,7 +26,7 @@ const contactInfo = [
     icon: MessageCircle,
     title: "WhatsApp",
     content: "Fale conosco agora",
-    link: "https://wa.me/5500000000000",
+    link: "https://wa.me/5519991790394",
     color: "bg-[#25D366]",
   },
 ];
@@ -100,7 +100,7 @@ export const Contact = () => {
               Atendimento rápido e direto. Tire suas dúvidas e agende uma consulta gratuita.
             </p>
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5519991790394"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-background text-[#25D366] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-background/90 transition-colors"
